@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 189px;
+  display: flex;
+  justify-content: center;
+  background-color: #e5e5e5;
+  align-items: center;
+}
+
+header img {
+  height: 147px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.fondoGris {
+  background-color: #c4c4c4;
+}
+
+.bannerTitulo {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerTitulo h1 {
+  margin: 0;
+  letter-spacing: 5px;
+}
