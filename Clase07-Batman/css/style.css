@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #ffffff;
+}
+
+.acomodarFooter {
+  min-height: calc(100vh - 40px);
+}
+
 header {
   height: 189px;
   display: flex;
@@ -25,14 +33,88 @@ header img {
   background-color: #c4c4c4;
 }
 
+.tabulacion50 {
+  margin-left: 50px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.margin-left10 {
+  margin-left: 10px;
+}
+
 .bannerTitulo {
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 70px;
 }
 
 .bannerTitulo h1 {
   margin: 0;
-  letter-spacing: 5px;
+  letter-spacing: 7px;
+  color: #005677;
+  font-family: "Times New Roman", Times, serif;
+  word-spacing: 7px;
+}
+
+.subtitulos {
+  padding-left: 9px;
+  color: #005677;
+  letter-spacing: 3px;
+  word-spacing: 7px;
+  padding: 6px;
+}
+
+#datosPersonales {
+  margin-bottom: 20px;
+}
+
+.margin-top15 {
+  margin-top: 15px;
+}
+
+#formacionAcademica ul {
+  list-style: none;
+}
+
+#formacionAcademica {
+  margin-bottom: 20px;
+}
+
+.dobleItem {
+  display: flex;
+}
+
+#experienciaLaboral {
+  margin-bottom: 70px;
+}
+
+#experienciaLaboral ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  height: 40px;
+  background-color: #005677;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+
+footer h3 {
+  margin-right: 26px;
+}
+
+.imagenFooter {
+  margin-right: 26px;
 }
