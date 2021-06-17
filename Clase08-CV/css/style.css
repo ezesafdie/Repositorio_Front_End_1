@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: sans-serif;
+}
+
+.acomodarFooter {
+  min-height: calc(100vh - 60px);
+  /* border: 5px solid blue; */
+  background-color: #c5cae9;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: #3f51b5;
+  align-items: center;
+}
+
+.sobremi__button {
+  background-color: #e040fb;
+  outline: none;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.sobremi__button:hover {
+  background-color: #303f9f;
+  border: 3px solid black;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.sobremi__button:active {
+  border: 5px solid rgba(197, 202, 233, 0.5);
+}
+
+.introduccion {
+  display: flex;
+  min-height: calc(100vh + 5px);
+  align-items: center;
+  background-color: #c5cae9;
+  border-bottom: 5px solid #212121;
+}
+
+.introduccion--sinBarra {
+  min-height: 100vh;
+  border-bottom: none;
+}
+
+.introduccion__container {
+  width: 50%;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 3px solid black; */
+}
+
+.introduccion__container--column {
+  flex-direction: column;
+}
+
+.introduccion__imagen {
+  border-radius: 100%;
+  width: 70vh;
+}
+
+.introduccion__h1 {
+  font-size: calc(1em + 2vw);
+  margin-bottom: 30px;
+}
+
+.introduccion__p {
+  font-size: calc(0.5em + 0.8vw);
+}
+
+.introduccion__div {
+  padding: 30px;
+}
+
+.span {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.fa-arrow-left {
+  margin-right: 5px;
+}
+
+.datos {
+  background-color: #3f51b5;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.fondoGris {
+  background-color: #bdbdbd;
+}
+
+.tabulacion50 {
+  margin-left: 50px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.margin-left10 {
+  margin-left: 10px;
+}
+
+.bannerTitulo {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.bannerTitulo h1 {
+  margin: 0;
+  letter-spacing: 7px;
+  color: #005677;
+  font-family: "Times New Roman", Times, serif;
+  word-spacing: 7px;
+}
+
+.subtitulos {
+  padding-left: 9px;
+  color: #005677;
+  letter-spacing: 3px;
+  word-spacing: 7px;
+  padding: 6px;
+}
+
+#datosPersonales {
+  margin-bottom: 20px;
+}
+
+.margin-top15 {
+  margin-top: 15px;
+}
+
+#formacionAcademica ul {
+  list-style: none;
+}
+
+#formacionAcademica {
+  margin-bottom: 20px;
+}
+
+.dobleItem {
+  display: flex;
+}
+
+#experienciaLaboral {
+  padding-bottom: 30px;
+}
+
+#experienciaLaboral ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  height: 40px;
+  background-color: #303f9f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  box-shadow: 0px -0.5px 10px #212121;
+}
+
+footer h3 {
+  margin-right: 26px;
+}
+
+.imagenFooter {
+  margin-right: 26px;
+}
+
+.dobleItem ul {
+  margin-top: -1px;
+}
+
+.lista {
+  color: #bdbdbd;
+}
+
+.fa-infinity {
+  margin-left: 2px;
+}
