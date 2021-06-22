@@ -1,0 +1,157 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 10px 7px grey;
+  z-index: 2;
+}
+
+.header__oferta {
+  height: 20px;
+  width: 100%;
+  background-color: #1cd1b0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.header__p {
+  margin-left: 10px;
+}
+
+.header__heroes {
+  height: 80px;
+  width: 100%;
+  background-color: #00669f;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.header__p--heroes {
+  margin-left: 30px;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.distancia {
+  height: 100px;
+}
+
+.heroes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 304px;
+  min-height: calc(100vh - 100px);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-wrap: nowrap;
+}
+
+.heroes__cards {
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 532px;
+  flex-wrap: wrap;
+}
+
+.card {
+  /* border: 3px solid black; */
+  width: 300px;
+  min-height: 532px;
+  position: relative;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.376);
+}
+
+.card_header {
+  width: 100%;
+  height: 193px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative;
+}
+
+.card__heart {
+  position: absolute;
+  top: 15px;
+  right: 249px;
+}
+
+.card__fondo {
+  width: 100%;
+  height: 100%;
+}
+
+.card__fotoPerfil {
+  width: 120px;
+  border-radius: 100%;
+  position: relative;
+  left: calc(50% - 60px);
+  top: -70px;
+}
+
+.card__nombreHeroe {
+  position: relative;
+  top: -70px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.card_descripcionHeroe {
+  position: relative;
+  top: -50px;
+  padding: 15px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.card__button {
+  padding: 15px 25px 15px 25px;
+  color: #f3f3f3;
+  background-color: #00669f;
+  border-radius: 10px;
+  position: relative;
+  bottom: 20px;
+}
+
+.card__button:hover {
+  cursor: pointer;
+  background-color: #003e62;
+}
+
+.card__centrarButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+}
+
+footer {
+  height: 51px;
+  width: 100%;
+  background-color: #00669f;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.footer__p {
+  color: #fff9f9;
+  margin-left: 16px;
+  font-size: 1rem;
+}
