@@ -72,7 +72,7 @@ main {
 }
 
 .principal__card--delivery {
-  background: url("/images/delivery.jpg");
+  background: url("../images/delivery.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
