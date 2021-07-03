@@ -10,7 +10,7 @@ body {
   height: 30px;
 }
 
-.row {
+row {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -28,6 +28,13 @@ body {
   z-index: 10;
   width: 100%;
   margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.oferta__nav {
+  display: flex;
 }
 
 #oferta p {
@@ -97,7 +104,7 @@ body {
 }
 
 #headerPrincipal {
-  height: 93px;
+  min-height: 93px;
   background-color: #f0a83e;
 }
 
@@ -330,7 +337,7 @@ body {
 #suscribirse {
   display: flex;
   justify-content: space-between;
-  height: 60px;
+  min-height: 60px;
   background-color: #f0a83e;
 }
 
@@ -411,4 +418,120 @@ body {
 
 #derechosReservados p {
   margin-top: 11px;
+}
+
+/* Clases nuevas en el arreglo */
+
+#headerPrincipal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.header__logo {
+  display: flex;
+  margin-left: 30px;
+}
+
+#botonesHeader {
+  display: flex;
+}
+
+.productos {
+  display: flex;
+  justify-content: center;
+}
+
+.colProductoDestacado {
+  margin: 20px;
+}
+
+#contacto {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacto {
+  margin-left: 40px;
+}
+
+#contactoLogo {
+  margin-right: 40px;
+}
+@media (max-width: 900px) {
+  #headerPrincipal {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .header__logo {
+    margin-top: 10px;
+  }
+
+  #textoBanner {
+    display: flex;
+    justify-content: center;
+  }
+
+  #suscribirse {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #suscribirseDiv {
+    justify-content: center;
+  }
+
+  #contacto {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto {
+    margin-left: 0px;
+  }
+
+  #contactoLogo {
+    margin-top: 40px;
+  }
+
+  #textoBanner {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .productos {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .botonesHeader__i {
+    display: none;
+  }
+
+  .formFinal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .productos {
+    flex-direction: column;
+  }
+
+  #textoBanner {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .dibujito {
+    display: none;
+  }
 }
