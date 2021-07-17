@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon" />
+    <title>Register</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__descuento">
+        <p class="header__p">20% de descuento en todos los productos!</p>
+      </div>
+      <div class="header__nombre">
+        <a href="Clase14-Heroes2/heroes.html"
+          ><img src="images/logo.svg" alt="" class="header__logo"
+        /></a>
+        <h1 class="header__h1">Nombre Tienda</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="container__register">
+          <p class="container__p">Registro</p>
+        </div>
+        <div class="container__form">
+          <form action="" method="POST" class="form__register">
+            <input
+              type="text"
+              name="nombreApellido"
+              placeholder="Nombre y Apellido"
+              class="input__register"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Correo Electrónico"
+              class="input__register"
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Contraseña"
+              class="input__register"
+            />
+            <select name="pais" id="pais" class="select__register">
+              <option disabled selected>País</option>
+              <option value="ARG">Argentina</option>
+              <option value="COL">Colombia</option>
+              <option value="BRA">Brasil</option>
+            </select>
+            <div class="container__button">
+              <button
+                class="button__register button__register--reset"
+                type="reset"
+                role="link"
+                onclick=""
+              >
+                Resetear
+              </button>
+              <a
+                href="Clase14-Heroes2/heroes.html"
+                class="button__register button__register--register"
+                >Registrar</a
+              >
+            </div>
+          </form>
+        </div>
+        <div class="container__ingresar">
+          <p>
+            ¿Ya tenés una cuenta? <a href="login.html" class="link">Ingresá</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Todos los derechos reservados a Front End I</p>
+    </footer>
+  </body>
+</html>

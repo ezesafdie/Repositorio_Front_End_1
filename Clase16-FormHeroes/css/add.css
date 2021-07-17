@@ -1,0 +1,182 @@
+.container,
+form {
+  margin-top: 50px;
+  border-radius: 30px;
+  background-color: #00669f;
+  width: 80vw;
+  padding: 20px;
+}
+
+form {
+  margin-top: 0;
+}
+
+.container__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.container__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  /* border: 2px solid green; */
+}
+
+label {
+  color: #ffffff;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+input {
+  width: 35vw;
+  height: 50px;
+  border-radius: 20px;
+}
+
+#attachment {
+  border-radius: 0;
+}
+
+/* #attachment::before {
+  background-color: #5678ef;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: "Seleccionar";
+  width: 20vw;
+  height: 50px;
+  border-radius: 20px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+*/
+
+#attachment:hover {
+  cursor: pointer;
+}
+
+#description {
+  width: 35vw;
+  border-radius: 20px;
+  height: 100%;
+  resize: none;
+}
+
+#description::placeholder {
+  padding: 5px;
+  font-size: 1.5rem;
+}
+
+#description:focus {
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+.relleno {
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.check {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+label {
+  display: flex;
+}
+
+.relleno--border-top {
+  padding-top: 20px;
+  border-top: 1px solid #cccccc;
+}
+
+.submit {
+  text-decoration: none;
+  background-color: #1cd1b0;
+  width: 40vw;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 2.5rem;
+  color: black;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+  .container__row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container__column {
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #date {
+    margin: 0;
+  }
+
+  form,
+  .container {
+    width: 80vw;
+  }
+
+  input {
+    width: 70vw;
+  }
+
+  #description {
+    width: 70vw;
+    margin-top: -10px;
+  }
+  .relleno {
+    width: 70vw;
+  }
+
+  .submit {
+    width: 60vw;
+    height: 3rem;
+    font-size: 2rem;
+  }
+
+  .container__text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container__text p {
+    text-align: center;
+  }
+}

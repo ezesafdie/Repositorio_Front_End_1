@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.header__descuento {
+  height: 30px;
+  background-color: #1cd1b0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__p {
+  margin-left: 20px;
+}
+
+.header__nombre {
+  height: 100px;
+  background-color: #00669f;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__logo {
+  margin-left: 20px;
+}
+
+.header__h1 {
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+.header_actions {
+  height: 30px;
+  background-color: #001d2d;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0px 10px 7px grey;
+}
+
+.header__a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 10px;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+
+.header__a--extremo {
+  margin-right: 20px;
+}
+
+.header__a:hover,
+.header__a:focus {
+  background-size: 100% 2px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  min-height: calc(100vh - 140px);
+  /* border: solid 3px black; */
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container__register {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.container__p {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.form__register {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input__register {
+  width: 50vw;
+  border: solid 2px black;
+  height: 50px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.input__register::placeholder {
+  color: black;
+  padding-left: 5px;
+}
+
+/* .input__register:focus {
+  padding-left: 5px;
+} */
+
+.text_area {
+  border: solid 2px black;
+  margin: 10px;
+  resize: none;
+}
+
+.select__register {
+  width: 50vw;
+  border: solid 2px black;
+  height: 50px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.container__button {
+  display: flex;
+  justify-content: center;
+}
+
+.button__register {
+  margin: 20px;
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+}
+
+.button__register:hover {
+  cursor: pointer;
+}
+
+.button__register--reset {
+  background-color: #888888;
+  color: #ffffff;
+}
+
+.button__register--reset:active {
+  background-color: #5a5a5a;
+}
+
+.button__register--register {
+  background-color: #1cd1b0;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding-left: 66px;
+  padding-top: 8.5px;
+}
+
+.button__register--register:active,
+.button__enter:active {
+  background-color: #19a087;
+}
+
+.button__register--enviar {
+  padding-left: 76px;
+}
+
+.button__enter {
+  /* border: 2px solid black; */
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  background-color: #1cd1b0;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: #096ca2;
+}
+
+.footer {
+  height: 35px;
+  background-color: #00669f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 950px) {
+  .container__button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container__button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    min-height: calc(100vh - 120px);
+    /* border: solid 3px black; */
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input__register,
+  .select__register {
+    width: 80vw;
+    border: solid 2px black;
+    height: 50px;
+    /* margin: 10px; */
+    border-radius: 5px;
+  }
+}

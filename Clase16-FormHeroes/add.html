@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/add.css" />
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__descuento">
+        <p class="header__p">20% de descuento en todos los productos!</p>
+      </div>
+      <div class="header__nombre">
+        <a href="Clase14-Heroes2/heroes.html"
+          ><img src="images/logo.svg" alt="" class="header__logo"
+        /></a>
+        <h1 class="header__h1">Nombre Tienda</h1>
+      </div>
+      <div class="header_actions">
+        <nav>
+          <a href="../contact.html" class="header__a">Contacto </a>
+          <a href="../index.html" class="header__a">Registrarme</a>
+          <a href="../login.html" class="header__a header__a--extremo"
+            >Ingresar</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="container__text">
+          <h1>Añadí tu super!</h1>
+          <p>Agregá tu personaje favorito completando las opciones.</p>
+        </div>
+
+        <form action="POST">
+          <div class="container__row">
+            <div class="container__column">
+              <label for="name">*Nombre</label>
+              <input type="text" id="name" />
+            </div>
+
+            <div class="container__column">
+              <label for="especie">*Especie</label>
+              <input type="text" id="especie" />
+            </div>
+          </div>
+
+          <div class="container__row">
+            <div class="container__column">
+              <label for="date">Fecha</label>
+              <input type="date" name="date" id="date" />
+            </div>
+
+            <div class="container__column">
+              <label for="attachment" id="label-attachment">Agregar foto</label>
+              <input type="file" id="attachment" />
+            </div>
+          </div>
+
+          <div class="container__row">
+            <div class="container__column">
+              <textarea
+                name="description"
+                id="description"
+                cols="30"
+                rows="10"
+                placeholder="Descripción"
+              ></textarea>
+            </div>
+
+            <div class="container__column">
+              <div class="relleno">
+                <label for="poderes">Poderes</label>
+                <label for="poderes1">
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    class="check"
+                    id="poderes1"
+                  />Volar</label
+                >
+                <label for="poderes2">
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    class="check"
+                    id="poderes2"
+                  />SuperInteligencia</label
+                >
+                <label for="poderes3">
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    class="check"
+                    id="poderes3"
+                  />Vista de rayo láser</label
+                >
+                <label for="poderes4">
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    class="check"
+                    id="poderes4"
+                  />Billetera gorda</label
+                >
+              </div>
+
+              <div class="relleno relleno--border-top">
+                <label for="poderes">Tipo de personaje</label>
+                <label for="tipo1">
+                  <input
+                    type="radio"
+                    name="tipo"
+                    class="check"
+                    id="tipo1"
+                  />Héroe / Heroina</label
+                >
+                <label for="tipo2">
+                  <input
+                    type="radio"
+                    name="tipo"
+                    class="check"
+                    id="tipo2"
+                  />Villano / Villana</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="container__row">
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              class="submit"
+              target="_blank"
+            >
+              Añadir</a
+            >
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- <footer class="footer">
+      <p>Todos los derechos reservados a Front End I</p>
+    </footer> -->
+  </body>
+</html>
